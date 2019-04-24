@@ -6,7 +6,7 @@ Para usar los ejemplos hay que seguir los siguientes pasos:
 - Crear cuenta en bitso.com (o dev.bitso.com)
 - Configurar API Keys en la cuenta de Bitso y agregarlos en un archivo llamado .env
 
-(hay unos keys de prueba aquí: https://jpst.it/1HC0v)
+(hay unos keys de DEV para probalo aquí: https://jpst.it/1HC0v)
 
 ```
 BITSO_DEV_KEY=
