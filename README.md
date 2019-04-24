@@ -13,7 +13,9 @@ BITSO_PROD_KEY=
 BITSO_PROD_SECRET=
 ```
 
-Correr los ejemplos con node como 
+Descargarlas librerias con 
+`npm install`
 
+Correr los ejemplos con node como 
 `node example1.js`
 
