@@ -1,3 +1,5 @@
+// tries to get from private API
+
 const superagent = require('superagent')
 
 superagent.get("https://api-dev.bitso.com/v3/account_status").then(res => {

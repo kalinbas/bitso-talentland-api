@@ -1,3 +1,5 @@
+// gets from public API
+
 const superagent = require('superagent')
 
 superagent.get("https://api-dev.bitso.com/v3/available_books").then(res => {

@@ -1,29 +1,23 @@
-// gets from private API
-
 const superagent = require('superagent')
 const crypto = require('crypto')
 require('dotenv').config()
 
 let nonce = new Date().getTime()
 
-let body = {
-    callback_url: "..."
-}
+let id = "..."
 
 let authHeader = createAuthHeader(
     process.env.BITSO_PROD_KEY, 
     process.env.BITSO_PROD_SECRET, 
     nonce, 
-    "POST", 
-    "/v3/webhooks", 
-    JSON.stringify(body)
+    "GET", 
+    "/v3/fundings/" + id,
+    ""
 )
 
 superagent
-    .post("https://api.bitso.com/v3/webhooks")
-    .set('Content-Type', 'application/json')
+    .get("https://api.bitso.com/v3/fundings/" + id)
     .set('Authorization', authHeader)
-    .send(body)
     .then(res => { console.log(res.body.payload) })
 
 function createAuthHeader(apiKey, apiSecret, nonce, httpMethod, requestPath, jsonPayload) {

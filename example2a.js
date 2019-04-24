@@ -1,11 +1,19 @@
+// gets from private API
+
 const superagent = require('superagent')
 const crypto = require('crypto')
-
 require('dotenv').config()
 
 let nonce = new Date().getTime()
 
-let authHeader = createAuthHeader(process.env.BITSO_KEY, process.env.BITSO_SECRET, nonce, "GET", "/v3/balance", "")
+let authHeader = createAuthHeader(
+    process.env.BITSO_DEV_KEY, 
+    process.env.BITSO_DEV_SECRET, 
+    nonce, 
+    "GET", 
+    "/v3/balance", 
+    ""
+)
 
 superagent.get("https://api-dev.bitso.com/v3/balance").set('Authorization', authHeader).then(res => {
     console.log(res.body.payload)
