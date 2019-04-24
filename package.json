@@ -1,0 +1,14 @@
+{
+  "name": "bitso-talentland-workshop",
+  "version": "0.3.0",
+  "description": "Talent Land Bitso API Workshop",
+  "engines": {
+    "node": "10.x"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^7.0.0",
+    "superagent": "^5.0.2"
+  },
+  "license": "MIT"
+}
