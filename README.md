@@ -15,7 +15,7 @@ BITSO_PROD_KEY=
 BITSO_PROD_SECRET=
 ```
 
-Descargarlas librerias con 
+Descargar las librerias con 
 `npm install`
 
 Correr los ejemplos con node como 
