@@ -1,4 +1,4 @@
-// gets from private API
+// sets webhook URL from private API
 
 const superagent = require('superagent')
 const crypto = require('crypto')

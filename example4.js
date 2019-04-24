@@ -1,3 +1,5 @@
+// send Bitso Transfer with private API
+
 const superagent = require('superagent')
 const crypto = require('crypto')
 require('dotenv').config()
